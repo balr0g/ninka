@@ -16,11 +16,12 @@
 #
 # intermediate rules
 # The disclaimer can have lots of trailing info
-Disclaimer:Disclaimer|Disclaimer-TOOLONG
+#Disclaimer:Disclaimer|Disclaimer-TOOLONG
 BSDcondAdvRULE:BSDcondAdv|BSDcondAdvVariant
 BSDcondEndorseRULE:BSDcondEndorse|BSDcondEndorseVariant
 BSDwarr:BSDWarrVariant|BSDwarr
 BSDasIs:BSDasIsVariant|BSDasIs
+#Exception:Exception|Exception-TOOLONG
 GPLnoVersion:GPL|GPLVar
 
 

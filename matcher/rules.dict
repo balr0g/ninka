@@ -34,6 +34,10 @@ LGPLv3:LGPLv3
 LGPLv3+:LGPLv3\+
 GPLv1+:GPLv1\+
 LGPLv2orv3:LGPLv2orv3
+
+MAME:MAMEPre,AllRights,BSDPre,MAMENonCommercial,MAMECopyleft,Exception-TOOLONG,BSDcond,BSDasIs,BSDWarr
+MAME:MAMEURL
+Ellenoff:AllRights,FreeListCredits,NoticeEachSrcFile,EllenoffRetroactive-TOOLONG
 ###############
 
 #### some weird dual license rules

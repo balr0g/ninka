@@ -20,7 +20,7 @@ use strict;
 use Getopt::Std;
 
 my %opts = ();
-if (!getopts ("vfCcSsGgTtLd",\%opts) or scalar(@ARGV) == 0) {
+if (!getopts ("vfCcSsGgTtLda",\%opts) or scalar(@ARGV) == 0) {
 print STDERR "Ninka version 1.1
 
 Usage $0 -fCtTvcgsGd <filename>
@@ -43,6 +43,7 @@ Usage $0 -fCtTvcgsGd <filename>
   -L force creation of matching
 
   -d delete intermediate files  
+  -a delete all created files
 
 \n";
 
@@ -53,6 +54,7 @@ Usage $0 -fCtTvcgsGd <filename>
 
 my $verbose = exists $opts{v};
 my $delete = exists $opts{d};
+my $deleteall = exists $opts{a};
 #$delete = 1;
 
 my $path = $0;
@@ -122,12 +124,16 @@ print `cat '${f}.license'`;
 
 unlink("${f}.code");
 
-if ($delete) {
+if ($delete || $deleteall) {
     unlink("${f}.badsent");
     unlink("${f}.comments");
     unlink("${f}.goodsent");
 #    unlink("${f}.sentences");
     unlink("${f}.senttok");
+}
+if($deleteall) {
+    unlink("${f}.sentences");
+    unlink("${f}.license");
 }
 
 exit 0;
