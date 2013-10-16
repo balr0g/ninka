@@ -31,7 +31,7 @@ MAMECopyleft:10:1:^Redistributions that are modified from the original source mu
 
 FreeListCredits:10:1:You are free to use and redistribute this code in modified or unmodified form, provided you list me in the credits:
 NoticeEachSrcFile:10:2:If you modify this source code, you must add a notice to each modified source file that it has been changed:
-EllenoffRetroactive:10:3:The author of this copywritten work reserves the right to change the terms of its usage and license at any time, including retroactively.*$:
+Retroactive:10:3:The author of this copywritten work reserves the right to change the terms of its usage and license at any time, including retroactively.*$:
 
 MITStyleCredit:9:0:^([^,;]+)Released for general non-commercial use under the MAME license with the additional requirement that you are free to use and redistribute this code in modified or unmodified form, provided you list me in the credits:
 NonCommercialGeneric:10:0:^If you wish to use this for commercial purposes, please contact me at$
